@@ -1,7 +1,12 @@
+/**
+ * All the code of Plugin Front-End Script, should reside in this file.
+ */
+
 jQuery(document).ready(function($) {
 
     $('#ulr-show-reg').click(function(e){
         e.preventDefault();
+        console.log('hi');
 
         $('.ulr-form-wrapper .ulr-header-login').addClass('ulr-hidden');
         $('.ulr-form-wrapper .ulr-header-register').removeClass('ulr-hidden');
@@ -17,7 +22,7 @@ jQuery(document).ready(function($) {
 });
 
 
-
+// Code for Ajax
 jQuery(document).ready(function($) {
 
   // login

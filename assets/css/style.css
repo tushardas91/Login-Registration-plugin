@@ -1,3 +1,7 @@
+/**
+* All the code of Plugin Front-End Style, should reside in this file.
+*/
+
 .ulr-form{
     position: relative;
 }
@@ -54,17 +58,28 @@
     color: #fff;
 }
 
+.ulr-form-wrapper input[type="text"]:focus,
+.ulr-form-wrapper input[type="email"]:focus,
+.ulr-form-wrapper input[type="password"]:focus,
+.ulr-form-wrapper input[type="search"]:focus{
+    color: #fff;
+    border-color: #fff;
+}
+
 .ulr-form-wrapper .ulr-btn-submit{
     background: #fff;
     color: #000;
-    max-width: 300px;
-    width: 100%;
+    width: 40%;
     font-size: 16px;
     font-weight: 600;
+    line-height: 20px;
     letter-spacing: 0.5px;
     margin: 20px 0;
     padding: 10px;
     outline: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -72,7 +87,8 @@
     transition: all 0.4s ease-in-out;
 }
 
-.ulr-form-wrapper .ulr-btn-submit:hover{
+.ulr-form-wrapper .ulr-btn-submit:hover,
+.ulr-form-wrapper .ulr-btn-submit:focus{
     background: #6299b7;
     color: #fff;
     -webkit-box-shadow: 0px 3px 6px 0px rgba(59, 136, 178, 0.5);
@@ -85,11 +101,14 @@
 }
 
 .ulr-form-wrapper span.ulr-btn-submit{
+    cursor: pointer;
+    display: inline-block;
     margin-left: 50px;
+    text-align: center;
 }
 
 .ulr-form-wrapper .ulr-pass-link{
-    display: block;
+    display: table;
     color: #fff;
     font-weight: 400;
     font-size: 14px;
@@ -102,12 +121,13 @@
 }
 
 .ulr-form-wrapper .ulr-pass-link:hover{
+    color: #fff;
     text-decoration: underline;
 }
 
 .ulr-form-wrapper .ulr-profile{
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    max-height: 200px;
     padding-bottom: 30px;
 }
 
@@ -116,7 +136,17 @@
     color: #fff;
 }
 
+.ulr-form-wrapper .ulr-profile>a:hover,
+.ulr-form-wrapper .ulr-logout>a:hover{
+    color: #eee;
+}
+
 @media only screen and (max-width: 795px) {
+
+    .ulr-form-wrapper .ulr-btn-submit{
+        width: 100%;
+    }
+
     .ulr-form-wrapper span.ulr-btn-submit{
         display: block;
         margin-left: 0px;

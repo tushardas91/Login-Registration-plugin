@@ -1,5 +1,6 @@
 <?php
-if(!class_exists(UlrPluginAjax)) {
+
+if(!class_exists('UlrPluginAjax')) {
 
     class UlrPluginAjax
     {

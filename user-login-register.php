@@ -4,7 +4,7 @@
  * Description: This plugin added user Login and Registration Form.
  * Plugin URI:
  * Author: Tushar Das
- * Author URI:
+ * Author URI: http://tushardas.ga
  * Version: 1.0.0
  * License: GPLv2
  * Text Domain: user-login-register
@@ -51,7 +51,7 @@ if (!defined('USER_LOG_REG_PLUGIN_URI')) define( 'USER_LOG_REG_PLUGIN_URI', plug
 if (!defined('USER_LOG_REG_PLUGIN_TEXTDOMAIN')) define( 'USER_LOG_REG_PLUGIN_TEXTDOMAIN', 'user-login-register' );
 
 
-if(!class_exists(UserLoginRegistration)) {
+if(!class_exists('UserLoginRegistration')) {
 
     class UserLoginRegistration
     {
@@ -102,7 +102,7 @@ if(!class_exists(UserLoginRegistration)) {
 
         // Create direct link of plugin settings area.
         public function settings_page_link($link){
-            $settings_page_link = '<a href="admin.php?page=ulr_plugin">'.  _e('Settings', 'user-login-register') . '</a>';
+            $settings_page_link = '<a href="admin.php?page=ulr_plugin">Settings</a>';
             array_push( $link, $settings_page_link );
             return $link;
         }
@@ -126,11 +126,14 @@ if(!class_exists(UserLoginRegistration)) {
         function enqueue(){
             wp_enqueue_style( 'ulr-style' , USER_LOG_REG_PLUGIN_URI.'/assets/css/style.css' );
 
-            wp_enqueue_script( 'ulr-script' , USER_LOG_REG_PLUGIN_URI.'/assets/js/script.js' );
+            wp_enqueue_script( 'ulr-jquery' , USER_LOG_REG_PLUGIN_URI.'/assets/js/jquery-2.1.0.min.js', true );
+
+            wp_enqueue_script( 'ulr-script' , USER_LOG_REG_PLUGIN_URI.'/assets/js/script.js', true );
 
             wp_localize_script( 'ulr-script', 'ajax_object', array(
                 'ajaxurl' => admin_url( 'admin-ajax.php' ) // WordPress AJAX
             ) );
+
         }
 
     }

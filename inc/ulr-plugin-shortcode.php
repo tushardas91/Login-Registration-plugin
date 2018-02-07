@@ -1,5 +1,10 @@
 <?php
-if(! class_exists(UlrPluginShortcode)){
+
+/**
+ * The code in this file create a shortcode for showing plugin output in different page.
+ */
+
+if(! class_exists('UlrPluginShortcode')){
 
   class UlrPluginShortcode{
 
