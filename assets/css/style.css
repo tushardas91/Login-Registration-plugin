@@ -1,0 +1,124 @@
+.ulr-form{
+    position: relative;
+}
+
+.ulr-form-wrapper{
+    background: #000;
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+}
+
+.ulr-form-wrapper .ulr-header-title{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.ulr-form-wrapper .ulr-status-reg,
+.ulr-form-wrapper .ulr-status-log{
+    color: #eee;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.ulr-form-wrapper .ulr-hidden{
+    display: none;
+    height: 0px;
+}
+
+.ulr-form-wrapper .form-control{
+    margin: 20px 0;
+    color: #fff;
+    font-size: 16px;
+    height: 42px;
+    position: relative;
+    border-radius: 0;
+    border: 1px solid #fff;
+    line-height: 42px;
+    background: 0 0;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    box-shadow: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.ulr-form-wrapper input.form-control::placeholder {
+    color: #fff;
+}
+
+.ulr-form-wrapper .ulr-btn-submit{
+    background: #fff;
+    color: #000;
+    max-width: 300px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    padding: 10px;
+    outline: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.ulr-form-wrapper .ulr-btn-submit:hover{
+    background: #6299b7;
+    color: #fff;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(59, 136, 178, 0.5);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(59, 136, 178, 0.5);
+    box-shadow: 0px 3px 6px 0px rgba(59, 136, 178, 0.5);
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline: none;
+}
+
+.ulr-form-wrapper span.ulr-btn-submit{
+    margin-left: 50px;
+}
+
+.ulr-form-wrapper .ulr-pass-link{
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .5px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.ulr-form-wrapper .ulr-pass-link:hover{
+    text-decoration: underline;
+}
+
+.ulr-form-wrapper .ulr-profile{
+    width: 80px;
+    height: 80px;
+    padding-bottom: 30px;
+}
+
+.ulr-form-wrapper .ulr-profile>a,
+.ulr-form-wrapper .ulr-logout>a{
+    color: #fff;
+}
+
+@media only screen and (max-width: 795px) {
+    .ulr-form-wrapper span.ulr-btn-submit{
+        display: block;
+        margin-left: 0px;
+    }
+}
