@@ -2,7 +2,7 @@
 /**
  * Plugin Name: User Login Register
  * Description: This plugin added user Login and Registration Form.
- * Plugin URI:
+ * Plugin URI: http://tushardas.ga/user-login-register/
  * Author: Tushar Das
  * Author URI: http://tushardas.ga
  * Version: 1.0.0
